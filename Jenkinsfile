@@ -29,6 +29,7 @@ pipeline {
                  sh "mvn test"
            }
        }
+       }
 
     post {
        failure {
@@ -42,5 +43,4 @@ pipeline {
                      mimeType: 'text/html',to: "konvicted555@gmail.com"
       }      
    }
-}
 }
